@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marbleslides-like Math Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Math Marbles</h1>
+      <p>Enter equations like: <code>y = 0.5x + 2</code> or <code>y = -0.1x^2 + 3x - 4</code></p>
+    </header>
+
+    <section id="controls">
+      <form id="equation-form">
+        <input id="equation-input" type="text" placeholder="y = ..." autocomplete="off" required />
+        <button type="submit">Draw</button>
+        <button type="button" id="reset-btn" class="secondary">Reset</button>
+        <button type="button" id="launch-btn" class="secondary">Launch Balls</button>
+        <label for="level-select" class="badge" style="margin-left:8px;">Level</label>
+        <select id="level-select">
+          <option value="beginner" selected>Beginner</option>
+          <option value="pro">Pro</option>
+        </select>
+      </form>
+      <div class="hints">
+        <span>Tips: use +, -, *, /, ^, parentheses. Example: y = sin(x) + 0.5x</span>
+      </div>
+    </section>
+
+    <section id="canvas-wrap">
+      <canvas id="game-canvas" width="900" height="600"></canvas>
+      <div id="status-bar">
+        <span id="stars-status">Stars: 0/0</span>
+        <span id="level-status">Level 1</span>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

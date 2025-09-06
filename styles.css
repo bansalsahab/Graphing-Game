@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Inter, system-ui, Arial, sans-serif; color: #0b1520; background: #0e1a26; }
+
+#app { max-width: 1000px; margin: 0 auto; padding: 16px; }
+header { color: #e8f1ff; }
+header h1 { margin: 0 0 8px; font-size: 28px; }
+header p { margin: 0 0 12px; color: #b6c6e3; }
+
+#controls { background: #0f2233; border: 1px solid #1e3954; border-radius: 10px; padding: 12px; margin-bottom: 12px; }
+#equation-form { display: flex; gap: 8px; }
+#equation-input { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid #2c4b6b; background: #0c1926; color: #e8f1ff; }
+#equation-input::placeholder { color: #6e8aab; }
+button { padding: 10px 14px; border-radius: 8px; border: 1px solid #2c4b6b; background: #2a74e6; color: white; cursor: pointer; font-weight: 600; }
+button.secondary { background: #12365f; }
+button:hover { filter: brightness(1.1); }
+
+.hints { margin-top: 8px; color: #93b2da; font-size: 13px; }
+
+#canvas-wrap { position: relative; }
+#game-canvas { width: 100%; height: auto; display: block; background: #091521; border: 1px solid #1e3954; border-radius: 10px; }
+#status-bar { display: flex; justify-content: space-between; margin-top: 8px; color: #b6c6e3; font-size: 14px; }
+
+.badge { display: inline-block; padding: 3px 8px; border-radius: 6px; background: #12365f; color: #d5e6ff; border: 1px solid #2c4b6b; }
